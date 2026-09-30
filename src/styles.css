@@ -1205,13 +1205,96 @@ h1 .wave {
 }
 
 .modal-card {
-    max-width: 550px;
+    max-width: 640px;
     width: 100%;
+    max-height: 86vh;
+    overflow-y: auto;
     background: #111419;
     border: 1px solid #343a45;
     border-radius: 22px;
     padding: 40px;
     position: relative
+}
+
+.modal-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface2)
+}
+
+.modal-meta span {
+    display: block;
+    font: 9px 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #727986;
+    margin-bottom: 4px
+}
+
+.modal-meta b {
+    font-size: 13px;
+    color: var(--text)
+}
+
+.case-study {
+    margin-top: 24px
+}
+
+.case-study h4 {
+    margin: 0 0 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text)
+}
+
+.case-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 10px
+}
+
+.case-row span {
+    display: block;
+    font: 9px 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px
+}
+
+.case-row div:nth-child(1) span {
+    color: #ff9b9b
+}
+
+.case-row div:nth-child(2) span {
+    color: var(--cyan)
+}
+
+.case-row div:nth-child(3) span {
+    color: var(--lime)
+}
+
+.case-row p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--muted)
+}
+
+.modal-video {
+    width: 100%;
+    border-radius: 14px;
+    margin-top: 20px;
+    display: block;
+    background: #000
 }
 
 .modal-card h2 {
@@ -1335,6 +1418,10 @@ h1 .wave {
 
     .skill-groups {
         grid-template-columns: 1fr 1fr
+    }
+
+    .case-row {
+        grid-template-columns: 1fr
     }
 
     .focus-bar b {

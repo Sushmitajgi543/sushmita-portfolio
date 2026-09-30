@@ -54,26 +54,161 @@ const projects = [
   {
     name: "YouSmart AI",
     tag: "AI Product · Career Intelligence",
-    desc: "AI-powered career platform concept combining resume scoring, real-time feedback and personalized job-growth guidance.",
-    tech: ["React", "Node.js", "OpenAI", "Gemini", "AI Agents"],
-    impact: "AI-native product",
+    desc: "Cross-platform Chrome extension and dashboard enabling students, job seekers and professionals to build resumes, check ATS scores and run AI-powered mock interviews with OpenAI and Python integrations. Led Phase 3 as Team Lead, directing advanced AI features for mock interviews and ATS optimization through to production rollout.",
+    tech: ["React", "Node.js", "MongoDB", "OpenAI", "Python", "Chrome Extension"],
+    impact: "Team Lead · Phase 3",
     accent: "violet",
+    image: "/yousmart-logo.png",
+    links: {
+      chrome:
+        "https://chromewebstore.google.com/detail/dnkngomonbiblcjdgcopibalibcbfobe?utm_source=item-share-cb",
+    },
   },
   {
     name: "Nexiun",
     tag: "Social · AI · Mobile",
-    desc: "Cross-platform social experience with AI-powered creation flows, multilingual UX, notifications and analytics.",
-    tech: ["React Native", "Node.js", "MongoDB", "AWS", "i18next"],
-    impact: "20K+ users",
+    desc: "AI-driven social and dating platform that blends real-world image editing with social discovery. Led end-to-end development as Team Lead — architecture, backend performance optimization, third-party integrations (CometChat, Mailgun, Banuba editor), code reviews and release management.",
+    tech: ["React Native", "Node.js", "MongoDB", "CometChat", "Banuba", "Mailgun"],
+    impact: "Team Lead · 20K+ users",
     accent: "cyan",
+    image: "/nexiun-logo.png",
+    links: {
+      android:
+        "https://play.google.com/store/apps/details?id=com.nexiunplatforms.nexiun&pcampaignid=web_share",
+      ios: "https://apps.apple.com/in/app/nexiun-dating-app-friends/id6740975219",
+    },
   },
   {
     name: "Kisan Grow",
-    tag: "AgriTech · Accessibility",
-    desc: "Multilingual farming experience designed around practical information access across 9+ Indian languages.",
-    tech: ["React Native", "Node.js", "i18n", "APIs"],
+    tag: "AgriTech · Full Stack",
+    desc: "Full-stack mobile app and admin panel built with React Native and Node.js, giving farmers access to agricultural content across 9 Indian languages to improve rural accessibility and engagement.",
+    tech: ["React Native", "Node.js", "Admin Panel", "i18n"],
     impact: "9+ languages",
     accent: "orange",
+    image: "/kisangrow-icon.png",
+    links: {
+      android:
+        "https://play.google.com/store/apps/details?id=ai.rfis.content&pcampaignid=web_share",
+    },
+  },
+  {
+    name: "Machli",
+    tag: "Weather · Accessibility",
+    desc: "Weather forecasting app for fishermen — resolved API integration issues and optimized real-time updates across 9 Indian languages for safer, more reliable sea navigation.",
+    tech: ["React Native", "JavaScript", "Weather APIs", "i18n"],
+    impact: "9 languages",
+    accent: "lime",
+    image: "/machli-icon.png",
+    links: {
+      android: "https://play.google.com/store/search?q=machli&c=apps&hl=en_IN",
+    },
+    caseStudy: [
+      {
+        challenge: "Legacy code slowed down development",
+        solution: "Rewrote modules with updated libraries",
+        result: "50% faster builds and no blockers",
+      },
+      {
+        challenge: "No reliable sea distress alerts",
+        solution: "Integrated INCOIS real-time safety data",
+        result: "Fishermen receive 90% accurate warnings",
+      },
+      {
+        challenge: "UI too complex for low-tech users",
+        solution: "Designed ultra-minimal, icon-first interface",
+        result: "95% task success across user tests",
+      },
+      {
+        challenge: "Limited language and audio support",
+        solution: "Enabled multi-language with text-to-speech",
+        result: "60% boost in rural user retention",
+      },
+    ],
+  },
+  {
+    name: "ThreeOH",
+    tag: "Backend · Media",
+    desc: "Backend services integrating Spotify and YouTube data scraping to enrich the user experience, with MySQL-backed data management via Sequelize ORM.",
+    tech: ["Node.js", "Express.js", "Sequelize", "MySQL"],
+    impact: "Backend Developer",
+    accent: "violet",
+  },
+  {
+    name: "Doctor Alliance",
+    tag: "HealthTech · Compliance",
+    desc: "WAVE (Workflow Automation Visualization & Enhancement) is an analytics and process automation tool built for Doctor Alliance, a Texas-based healthcare SaaS provider — a HIPAA-compliant platform integrating NPI registry data retrieval, engineered for compliance and scalability.",
+    tech: ["React.js", "Node.js", "NPI Registry", "HIPAA", "Cron Jobs"],
+    impact: "6-month engagement · Team of 2",
+    accent: "cyan",
+    image: "/doctoralliance-logo.png",
+    meta: {
+      Client: "Doctor Alliance",
+      Location: "Dallas, Texas",
+      Industry: "Healthcare",
+      Duration: "6 months",
+      "Team Size": "2",
+    },
+    video:
+      "https://new-website-onelab.s3.ap-south-1.amazonaws.com/videos/Doctor_Alliance_PRO.mp4",
+    caseStudy: [
+      {
+        challenge: "No visibility across internal workflows",
+        solution: "Built end-to-end dashboards for ops teams",
+        result: "Reduced manual dependency and task delays",
+      },
+      {
+        challenge: "Lacked clear UX and product structure",
+        solution: "Designed scalable architecture and clean UI",
+        result: "Faster onboarding and improved service delivery",
+      },
+      {
+        challenge: "Real-time sync needed across systems",
+        solution: "Used cron jobs and registry bots",
+        result: "Enabled higher volume handling efficiently",
+      },
+      {
+        challenge: "Constant logic and scope changes",
+        solution: "Held weekly syncs to align builds",
+        result: "Delivered adaptable features with stakeholder trust",
+      },
+    ],
+  },
+  {
+    name: "Runway",
+    tag: "PWA · Admin Tools",
+    desc: "Full-stack Progressive Web App with an AdminJS-powered admin panel that streamlines data operations and user management.",
+    tech: ["React.js", "MongoDB", "AdminJS", "PWA"],
+    impact: "Full Stack",
+    accent: "orange",
+    image: "/runway-logo.png",
+    links: {
+      web: "https://runway.org.in/",
+    },
+  },
+  {
+    name: "SuperBetter",
+    tag: "Mental Health · Gaming",
+    desc: "Mental health gaming web app — contributed to the interface and core functionality to support user engagement and wellbeing.",
+    tech: ["React.js", "JavaScript"],
+    impact: "Contributor",
+    accent: "lime",
+    image: "/superbetter-logo.png",
+    links: {
+      web: "https://superbetter.com/",
+    },
+  },
+  {
+    name: "Novelty Wealth",
+    tag: "FinTech · Wealth Management",
+    desc: "AI-powered portfolio and wealth management platform designed to simplify complex financial decisions for Indian professionals and families. Converted the existing React.js web app into a full mobile app using React Native (Expo) — solo, in one month.",
+    tech: ["React Native", "Expo", "React.js", "AI"],
+    impact: "Solo · 1 month",
+    accent: "violet",
+    image: "/noveltywealth-logo.png",
+    links: {
+      android:
+        "https://play.google.com/store/apps/details?id=in.noveltywealth.app&pcampaignid=web_share",
+    },
   },
 ];
 const skillGroups = [
@@ -532,6 +667,24 @@ function App() {
                           App Store <ExternalLink size={12} />
                         </a>
                       )}
+                      {p.links.chrome && (
+                        <a
+                          href={p.links.chrome}
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Chrome Extension <ExternalLink size={12} />
+                        </a>
+                      )}
+                      {p.links.web && (
+                        <a
+                          href={p.links.web}
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Visit Site <ExternalLink size={12} />
+                        </a>
+                      )}
                     </div>
                   )}
                 </div>
@@ -729,11 +882,50 @@ function App() {
             <span className="kicker">PROJECT</span>
             <h2>{active.name}</h2>
             <p>{active.desc}</p>
+            {active.meta && (
+              <div className="modal-meta">
+                {Object.entries(active.meta).map(([k, v]) => (
+                  <div key={k}>
+                    <span>{k}</span>
+                    <b>{v}</b>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="tags">
               {active.tech.map((t) => (
                 <i key={t}>{t}</i>
               ))}
             </div>
+            {active.caseStudy && (
+              <div className="case-study">
+                <h4>Challenges → Solutions → Results</h4>
+                {active.caseStudy.map((c, i) => (
+                  <div className="case-row" key={i}>
+                    <div>
+                      <span>Challenge {String(i + 1).padStart(2, "0")}</span>
+                      <p>{c.challenge}</p>
+                    </div>
+                    <div>
+                      <span>Solution</span>
+                      <p>{c.solution}</p>
+                    </div>
+                    <div>
+                      <span>Result</span>
+                      <p>{c.result}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            {active.video && (
+              <video
+                className="modal-video"
+                src={active.video}
+                controls
+                preload="none"
+              />
+            )}
             {active.links && (
               <div className="modal-links">
                 {active.links.android && (
@@ -752,6 +944,24 @@ function App() {
                     target="_blank"
                   >
                     App Store <ExternalLink size={15} />
+                  </a>
+                )}
+                {active.links.chrome && (
+                  <a
+                    className="secondary"
+                    href={active.links.chrome}
+                    target="_blank"
+                  >
+                    Chrome Extension <ExternalLink size={15} />
+                  </a>
+                )}
+                {active.links.web && (
+                  <a
+                    className="secondary"
+                    href={active.links.web}
+                    target="_blank"
+                  >
+                    Visit Site <ExternalLink size={15} />
                   </a>
                 )}
               </div>
